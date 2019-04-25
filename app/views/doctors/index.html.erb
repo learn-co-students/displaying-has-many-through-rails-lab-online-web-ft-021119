@@ -1,0 +1,6 @@
+Doctors <br>
+<ul>
+<%=@doctors.each do |d| %>
+  <li>Name: <%= link_to d.name, doctor_path(d) %> Number of Appointments: <%= d.appointments.count %> </li>
+<% end %>
+</ul>
