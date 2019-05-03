@@ -5,6 +5,6 @@ class DoctorsController < ApplicationController
     end
     def show
         @doctor = Doctor.find_by_id(params[:id])
-        binding.pry
+        # binding.pry
     end
 end
