@@ -1,0 +1,5 @@
+<h3>Appointment:</h3>
+<h4>Patient: <%=link_to @appointment.patient.name, patient_path(@appointment.patient)%></h4>
+<h4>Doctor: <%=link_to @appointment.doctor.name, doctor_path(@appointment.doctor)%></h4>
+<% a = @appointment.appointment_datetime %>
+<p><%= Date::MONTHNAMES[a.month]%> <%=a.day%>, <%=a.year%> at <%=a.hour%>:<%=a.min%></p>
