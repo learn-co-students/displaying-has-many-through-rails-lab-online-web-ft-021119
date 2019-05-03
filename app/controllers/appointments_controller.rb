@@ -5,4 +5,8 @@ class AppointmentsController < ApplicationController
         @appointment = Appointment.find_by_id(params[:id])
         # binding.pry
     end
+
+    def index
+        redirect_to 'appointments/show'
+    end
 end
