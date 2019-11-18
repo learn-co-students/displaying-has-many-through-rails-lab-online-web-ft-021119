@@ -1,0 +1,4 @@
+<h1>Appointment's Information</h1>
+<p><%= @appointment.appointment_datetime %></p>
+<p>For: <%= link_to @patient.name, patient_path(@patient) %></p>
+<p>With: <%= link_to @doctor.name, doctor_path(@doctor) %></p>
